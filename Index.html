@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soumya Shekhar Deb – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-ring"></div>
+    <div class="loader-text">
+      <span class="loader-initials">SSD</span>
+      <span class="loader-tagline">Loading Experience…</span>
+    </div>
+  </div>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-gold">S</span>SD
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#hero" class="mob-link">Home</a></li>
+    <li><a href="#about" class="mob-link">About</a></li>
+    <li><a href="#skills" class="mob-link">Skills</a></li>
+    <li><a href="#education" class="mob-link">Education</a></li>
+    <li><a href="#experience" class="mob-link">Experience</a></li>
+    <li><a href="#events" class="mob-link">Events</a></li>
+    <li><a href="#hobbies" class="mob-link">Hobbies</a></li>
+    <li><a href="#contact" class="mob-link">Contact</a></li>
+  </ul>
+</div>
+
+<!-- =================== HERO =================== -->
+<section id="hero">
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-image-wrap">
+      <div class="hero-glow-ring"></div>
+      <div class="hero-avatar">
+    <img src="images/profile.jpg" alt="Soumya Shekhar Deb">
+</div>
+    </div>
+    <div class="hero-text">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Soumya Shekhar Deb</h1>
+      <p class="hero-tagline">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-location">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Silchar, Assam, India &nbsp;·&nbsp; IIIT Silchar
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+        <a href="#about" class="btn-outline">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- =================== ABOUT =================== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-label">01 — About</div>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a Computer Lab Instructor and Monthly Schedule Manager at <strong>IIIT Silchar</strong>, where I combine my love for technology with the joy of teaching. With 2 years of hands-on experience, I guide students through practical computing, manage laboratory operations, and orchestrate monthly institutional schedules.</p>
+        <p>My academic background in <strong>Economics</strong> — currently pursuing MA Economics at IGNOU — gives me a unique perspective at the intersection of analytical thinking and technological application. I believe the best solutions emerge when quantitative reasoning meets creative problem-solving.</p>
+        <p>Beyond the classroom, I'm a passionate event organiser — having led AI development events, robotics fests, and tech summits. I thrive on challenges, adapt quickly, and am driven by a deep desire to grow in the banking and corporate sector.</p>
+        <div class="about-tags">
+          <span>Banking Aspirant</span>
+          <span>Tech Educator</span>
+          <span>Event Organiser</span>
+          <span>Economics Graduate</span>
+        </div>
+      </div>
+      <div class="about-info reveal">
+        <div class="info-card glass">
+          <div class="info-row"><span>Date of Birth</span><strong>19 May 2003</strong></div>
+          <div class="info-row"><span>Gender</span><strong>Male</strong></div>
+          <div class="info-row"><span>Nationality</span><strong>Indian</strong></div>
+          <div class="info-row"><span>Religion</span><strong>Hindu</strong></div>
+          <div class="info-row"><span>Marital Status</span><strong>Unmarried</strong></div>
+          <div class="info-row"><span>Experience</span><strong>2 Years</strong></div>
+        </div>
+        <div class="languages-card glass">
+          <h4>Languages</h4>
+          <div class="lang-chips">
+            <span>Bengali</span>
+            <span>Sylheti Bengali</span>
+            <span>English</span>
+            <span>Hindi</span>
+            <span class="learning">Japanese <em>(Learning)</em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SKILLS =================== -->
+<section id="skills" class="section alt-section">
+  <div class="container">
+    <div class="section-label">02 — Skills</div>
+    <h2 class="section-title">Expertise &amp; Tools</h2>
+    <div class="skills-grid">
+      <!-- Technical -->
+      <div class="skills-col reveal">
+        <h3 class="skills-col-title">Technical</h3>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-info"><span>MS Office</span><span class="pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="90"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-info"><span>Tally ERP</span><span class="pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="90"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-info"><span>Data Analysis</span><span class="pct">80%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-info"><span>Web Development</span><span class="pct">80%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-info"><span>Python</span><span class="pct">70%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-info"><span>C Programming</span><span class="pct">50%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-pct="50"></div></div>
+        </div>
+      </div>
+      <!-- Soft Skills -->
+      <div class="skills-col reveal">
+        <h3 class="skills-col-title">Soft Skills</h3>
+        <div class="soft-grid">
+          <div class="soft-card glass"><div class="soft-icon">🤝</div><span>Team Management</span></div>
+          <div class="soft-card glass"><div class="soft-icon">🏆</div><span>Leadership</span></div>
+          <div class="soft-card glass"><div class="soft-icon">🎯</div><span>Event Management</span></div>
+          <div class="soft-card glass"><div class="soft-icon">⚡</div><span>Quick Adaptability</span></div>
+          <div class="soft-card glass"><div class="soft-icon">💬</div><span>Communication</span></div>
+          <div class="soft-card glass"><div class="soft-icon">🧩</div><span>Problem Solving</span></div>
+          <div class="soft-card glass"><div class="soft-icon">🔥</div><span>Pressure Handling</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Certification -->
+    <div class="cert-wrap reveal">
+      <div class="cert-card glass">
+        <div class="cert-badge">PGDCA</div>
+        <div class="cert-info">
+          <h4>Post Graduate Diploma in Computer Application</h4>
+          <p>Covering Python · Database Management · MS Office · Internet Applications · Basic Computer Applications · English Typing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== EDUCATION =================== -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-label">03 — Education</div>
+    <h2 class="section-title">Academic Journey</h2>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content glass">
+          <span class="tl-year">2026 – Pursuing</span>
+          <h4>Master of Arts in Economics (MAEC)</h4>
+          <p>IGNOU</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content glass">
+          <span class="tl-year">2024</span>
+          <h4>Bachelor of Arts in Economics</h4>
+          <p>Cachar College, Silchar · Assam University</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content glass">
+          <span class="tl-year">2021</span>
+          <h4>Higher Secondary Education</h4>
+          <p>Cachar College · AHSEC Board</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content glass">
+          <span class="tl-year">2019</span>
+          <h4>Secondary Education</h4>
+          <p>Shayama Charan Dev Vidyapith · SEBA Board</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== EXPERIENCE =================== -->
+<section id="experience" class="section alt-section">
+  <div class="container">
+    <div class="section-label">04 — Experience</div>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="exp-grid">
+
+      <div class="exp-card glass reveal">
+        <div class="exp-icon">💻</div>
+        <div class="exp-body">
+          <span class="exp-duration">2 Years · Current</span>
+          <h3>Computer Lab Instructor</h3>
+          <p class="exp-org">IIIT Silchar</p>
+          <ul class="exp-list">
+            <li>Conduct practical computer classes for students</li>
+            <li>Assist students in computer applications and troubleshooting</li>
+            <li>Laboratory management and equipment maintenance</li>
+            <li>Provide technical assistance and student support</li>
+            <li>Manage schedules, reports, and administrative tasks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-card glass reveal">
+        <div class="exp-icon">📅</div>
+        <div class="exp-body">
+          <span class="exp-duration">Current</span>
+          <h3>Monthly Schedule Manager</h3>
+          <p class="exp-org">IIIT Silchar</p>
+          <ul class="exp-list">
+            <li>Plan and execute monthly institutional schedules</li>
+            <li>Coordinate staff activities and departmental logistics</li>
+            <li>Manage operational tasks and ensure timely execution</li>
+            <li>Liaise between departments for smooth workflow</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== EVENTS =================== -->
+<section id="events" class="section">
+  <div class="container">
+    <div class="section-label">05 — Events</div>
+    <h2 class="section-title">Events Organised</h2>
+    <div class="events-grid">
+
+      <div class="event-card glass reveal" data-desc="An intensive event where participants build Artificial Intelligence models using Python. Teams compete to create the most effective AI solution, fostering hands-on experience in machine learning and data science.">
+        <div class="event-icon">🧠</div>
+        <h3>Neuronex</h3>
+        <p class="event-type">AI Model Development</p>
+        <span class="event-toggle">Read More ↓</span>
+        <div class="event-desc"></div>
+      </div>
+
+      <div class="event-card glass reveal" data-desc="A technology and AI awareness event bringing together students, faculty, and industry professionals to discuss the future of artificial intelligence and its impact on society and industry.">
+        <div class="event-icon">🚀</div>
+        <h3>AI Summit</h3>
+        <p class="event-type">Technology &amp; AI Awareness</p>
+        <span class="event-toggle">Read More ↓</span>
+        <div class="event-desc"></div>
+      </div>
+
+      <div class="event-card glass reveal" data-desc="A robotics and innovation event where student teams design, build, and compete with robots across various challenges. The event encourages creative engineering, teamwork, and practical application of electronics and programming.">
+        <div class="event-icon">🤖</div>
+        <h3>Robo Fiesta</h3>
+        <p class="event-type">Robotics &amp; Innovation</p>
+        <span class="event-toggle">Read More ↓</span>
+        <div class="event-desc"></div>
+      </div>
+
+      <div class="event-card glass reveal" data-desc="Hands-on technical workshops designed for student development and technology upskilling. Topics range from web development and Python to data analysis and design thinking — empowering students with practical, industry-relevant skills.">
+        <div class="event-icon">🛠️</div>
+        <h3>Technical Workshops</h3>
+        <p class="event-type">Student Development</p>
+        <span class="event-toggle">Read More ↓</span>
+        <div class="event-desc"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== HOBBIES =================== -->
+<section id="hobbies" class="section alt-section">
+  <div class="container">
+    <div class="section-label">06 — Hobbies</div>
+    <h2 class="section-title">Beyond Work</h2>
+    <p class="section-sub">Click any card to explore.</p>
+    <div class="hobbies-grid">
+
+      <div class="hobby-card glass reveal" data-hobby="editing">
+        <div class="hobby-icon">✂️</div>
+        <h4>Editing</h4>
+      </div>
+      <div class="hobby-card glass reveal" data-hobby="webdev">
+        <div class="hobby-icon">💻</div>
+        <h4>Web Dev</h4>
+      </div>
+      <div class="hobby-card glass reveal" data-hobby="biking">
+        <div class="hobby-icon">🏍️</div>
+        <h4>Bike Riding</h4>
+      </div>
+      <div class="hobby-card glass reveal" data-hobby="music">
+        <div class="hobby-icon">🎵</div>
+        <h4>Music</h4>
+      </div>
+      <div class="hobby-card glass reveal" data-hobby="movies">
+        <div class="hobby-icon">🎬</div>
+        <h4>Movies</h4>
+      </div>
+      <div class="hobby-card glass reveal" data-hobby="anime">
+        <div class="hobby-icon">⛩️</div>
+        <h4>Anime</h4>
+      </div>
+      <div class="hobby-card glass reveal" data-hobby="gaming">
+        <div class="hobby-icon">🎮</div>
+        <h4>Gaming</h4>
+      </div>
+      <div class="hobby-card glass reveal" data-hobby="gym">
+        <div class="hobby-icon">💪</div>
+        <h4>Gym</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOBBY MODAL -->
+<div id="hobbyModal" class="modal-overlay">
+  <div class="modal-box glass">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- =================== CONTACT =================== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-label">07 — Contact</div>
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+       <a href="https://instagram.com/areyan_deb" target="_blank" rel="noopener" class="contact-item glass">
+  <div class="ci-icon">📸</div>
+  <div><span>Instagram</span><strong>@areyan_deb</strong></div>
+</a>
+        <a href="mailto:soumyadeb0319@gmail.com" class="contact-item glass">
+          <div class="ci-icon">✉️</div>
+          <div><span>Email</span><strong>soumyadeb0319@gmail.com</strong></div>
+        </a>
+        <a href="https://instagram.com/soumya_deb_106" target="_blank" rel="noopener" class="contact-item glass">
+          <div class="ci-icon">📸</div>
+          <div><span>Instagram</span><strong>@soumya_deb_106</strong></div>
+        </a>
+        <a href="https://github.com/soumyadeb0319-cell" target="_blank" rel="noopener" class="contact-item glass">
+          <div class="ci-icon">🐙</div>
+          <div><span>GitHub</span><strong>soumyadeb0319-cell</strong></div>
+        </a>
+        <div class="contact-item glass">
+          <div class="ci-icon">📍</div>
+          <div><span>Location</span><strong>Silchar, Assam, India</strong></div>
+        </div>
+      </div>
+
+      <form class="contact-form glass reveal" id="contactForm">
+        <h3>Send a Message</h3>
+        <div class="form-group">
+          <label for="cfName">Your Name</label>
+          <input type="text" id="cfName" placeholder="e.g. Rahul Sharma" required />
+        </div>
+        <div class="form-group">
+          <label for="cfEmail">Your Email</label>
+          <input type="email" id="cfEmail" placeholder="e.g. rahul@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="cfMsg">Your Message</label>
+          <textarea id="cfMsg" placeholder="Write your message here…" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Soumya Shekhar Deb · Crafted with ♥ &amp; Gold</p>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="backTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
